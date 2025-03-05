@@ -1,0 +1,11 @@
+[workspace]
+members = ["mnist"]
+resolver = "3"
+
+[workspace.package]
+authors = ["Xiangong Tang <tangxiangong@gmail.com>"]
+version = "0.1.0"
+edition = "2024"
+
+[workspace.dependencies]
+burn = { version = "0.16.0", features = ["train", "vision", "metal", "wgpu"] }

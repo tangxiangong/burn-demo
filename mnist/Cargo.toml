@@ -1,10 +1,8 @@
 [package]
-name = "burn-demo"
-version = "0.1.0"
-edition = "2024"
-
-[lib]
-name = "demo"
+name = "mnist"
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
 
 [dependencies]
-burn = { version = "0.16.0", features = ["train", "vision", "metal", "wgpu"] }
+burn = { workspace = true }
