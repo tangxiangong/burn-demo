@@ -1,0 +1,10 @@
+[package]
+name = "burn-demo"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "demo"
+
+[dependencies]
+burn = { version = "0.16.0", features = ["train", "vision", "metal", "wgpu"] }
