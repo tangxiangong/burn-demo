@@ -1,5 +1,5 @@
 use burn::{
-    backend::{Autodiff, Wgpu},
+    backend::{Autodiff, wgpu},
     optim::AdamConfig,
 };
 use mnist::{
@@ -8,9 +8,11 @@ use mnist::{
 };
 
 fn main() {
-    type MyBackend = Wgpu;
+    type MyBackend = wgpu::Wgpu;
     type MyAutodiffBackend = Autodiff<MyBackend>;
-    let device = burn::backend::wgpu::WgpuDevice::default();
+    let device = wgpu::WgpuDevice::default();
+    println!("Device: {:?}", device);
+
     let artifact_dir = "artifacts";
 
     train::<MyAutodiffBackend>(
