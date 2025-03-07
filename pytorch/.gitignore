@@ -1,0 +1,7 @@
+.venv
+uv.lock
+.python-version
+data
+.ruff_cache
+mnist_cnn.pt
+**/__pycache__
