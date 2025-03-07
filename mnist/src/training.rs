@@ -16,7 +16,7 @@ use crate::{data::MnistBatcher, model::ModelConfig};
 pub struct TrainingConfig {
     pub model: ModelConfig,
     pub optimizer: AdamConfig,
-    #[config(default = "10")]
+    #[config(default = "64")]
     pub batch_size: usize,
     #[config(default = "0.001")]
     pub learning_rate: f64,
